@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         permisionPhone = isPermissionCall()
         val stringPhone  = getString(R.string.string_phone)
         phoneSOS = intent.getStringExtra(stringPhone)
-        mainBinding.txtPhone.setText(phoneSOS)
+        mainBinding.txtPhone.text = getString(R.string.numero_introducido, phoneSOS)
 
 
     }

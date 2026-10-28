@@ -1,9 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
+<resources>
     <style name="Base.Theme.SOSPhone" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#D9272E</item>
+        <item name="colorSecondary">#D9272E</item>
+        <item name="colorTertiary">#D9272E</item>
     </style>
 
     <style name="Theme.SOSPhone" parent="Base.Theme.SOSPhone" />
+
+    <style name="BotonTarjeta" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="strokeColor">#111111</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:textColor">#111111</item>
+        <item name="iconTint">#FFFFFF</item>
+    </style>
+
 </resources>
