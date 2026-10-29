@@ -19,10 +19,11 @@
         android:contentDescription="Toy Story"
         android:scaleType="centerCrop"
         android:src="@drawable/cabecera_toy"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/contenedor_botones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txt_phone"
@@ -41,8 +42,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Número introducido: 615581499" />
 
-    <!-- 4 botones cuadrados con esquinas suaves, borde de color y sombra.
-         Colores sacados del póster: verde Buzz, azul cielo, rojo Toy Story, amarillo Woody. -->
     <LinearLayout
         android:id="@+id/contenedor_botones"
         android:layout_width="0dp"
@@ -131,7 +130,7 @@
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:layout_marginStart="14dp"
-            android:contentDescription="Ubicación"
+            android:contentDescription="Ubicacion"
             android:elevation="6dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
@@ -153,15 +152,15 @@
 
     <ImageView
         android:id="@+id/iv_change_phone"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
-        android:contentDescription="Cambiar teléfono SOS"
+        android:contentDescription="Cambiar telefono SOS"
         android:padding="8dp"
-        app:srcCompat="@drawable/sharp_add_call_24"
-        app:layout_constraintTop_toBottomOf="@id/txt_phone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/txt_phone"
+        app:srcCompat="@drawable/sharp_add_call_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
